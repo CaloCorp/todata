@@ -1,4 +1,4 @@
-const HighPFirst = document.querySelector(".toggle-priorities")
+const HighPFirst = document.querySelector(".high-priority-first")
 HighPFirst.addEventListener('click', function(event) {  
     
     const state1 = "High Priority First";
@@ -7,7 +7,7 @@ if(HighPFirst.innerText == state1){
     HighPFirst.innerText = state2 
 }
 else if (HighPFirst.innerText == state2) {
-showHidePrior.innerText = state1
+HighPFirst.innerText = state1
 }
 
 })
