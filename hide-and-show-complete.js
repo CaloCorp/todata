@@ -1,4 +1,4 @@
-const showHideComplete = document.querySelector(".hide-low-priority")
+const showHideComplete = document.querySelector(".hide-complete")
 showHideComplete.addEventListener('click', function(event) {  
     
     const state1 = "Hide Complete";
