@@ -32,6 +32,43 @@ const isLowPriority = function(todo) {
   return todo.priority === 1
 }
 
+const notCompleteOrderedFirst = function (todo1, todo2){
+
+    if(isNotComplete(todo1)) {
+      return -1;
+    } else if(todo1.complete == todo2.complete) {
+      return 0;
+    } else if(isNotComplete(todo2)) {
+      return 1;
+    }
+}
+const notCompleteFirst = function(todo){
+
+  const copyOfTodos = todo.slice(0)
+
+return copyOfTodos.sort(notCompleteOrderedFirst)
+}
+
+
+const comparePriority = (todo1, todo2) => {
+if (isHighPriority(todo1)){
+
+return -1;
+}
+else if (isHighPriority(todo2)) {
+  return 1;
+}
+else if(todo1.priority == todo2.priority){
+
+return 0;
+}
+}
+const priority2First = function (todo){
+
+const copyofTodos = todo.slice(0)
+
+return copyofTodos.sort(comparePriority)
+}
 
 
 /***********************
