@@ -9,7 +9,7 @@ if(showHidePrior.innerText == state1){
 else if (showHidePrior.innerText == state2) {
 showHidePrior.innerText = state1
 }
-
+refreshTodos()
 })
 
 
